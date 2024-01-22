@@ -8,8 +8,24 @@
 </head>
 
 <body>
-    <h1>Aanmelden.</h1>
-    
-</body>
 
+    <h1>Aanmelden.</h1>
+
+    <form action="mailto:arthur.vanoudenhove@student.hogent.be?subject=Aanmelden" method="post" enctype="text/plain">
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" placeholder="naam@server.com" required>
+        <br>
+        <br>
+        <label for="wachtwoord">Wachtwoord: </label>
+        <input type="password" name="wachtwoord" id="wachtwoord" required>
+        <br>
+        <br>
+        <label for="permanent">Aangemeld blijven: </label>
+        <input type="checkbox" name="permanent" id="permanent">
+        <br>
+        <br>
+        <input type="submit" value="Meld je aan">
+    </form>
+
+</body>
 </html>

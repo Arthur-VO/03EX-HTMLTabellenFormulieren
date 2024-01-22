@@ -9,7 +9,34 @@
 
 <body>
     <h1>Maak je afspraak.</h1>
-    
+    <form action="mailto:" method="post">
+        <fieldset>
+            <legend>Ik volg Web Development I</legend>
+
+            <input type="radio" name="les" id="les-campus830" value="Campus 08:30">
+            <label for="les-campus830">Op de campus van 8:30-10:00</label>
+            <br>
+            <input type="radio" name="les" id="les-campus11" value="Campus 11:00">
+            <label for="les-campus11">Op de campus van 11:00-12:30</label>
+            <br>
+            <input type="radio" name="les" id="les-online" value="Online">
+            <label for="les-online">Online van 11:00-12:30</label>
+        </fieldset>
+        <fieldset>
+            <legend>Examen Web Development I</legend>
+
+            <input type="radio" name="examen" id="ex-campus830" value="Campus 08:30">
+            <label for="ex-campus830">Op de campus van 8:30-10:00</label>
+            <br>
+            <input type="radio" name="examen" id="ex-campus11" value="Campus 11:00">
+            <label for="ex-campus11">Op de campus van 11:00-12:30</label>
+            <br>
+            <input type="radio" name="examen" id="ex-online" value="Online">
+            <label for="ex-online">Online van 11:00-12:30</label>
+        </fieldset>
+        <input type="submit" value="Verstuur">
+        <input type="reset" value="Clear">
+    </form>
 </body>
 
 </html>

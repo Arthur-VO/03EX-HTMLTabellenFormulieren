@@ -9,7 +9,29 @@
 
 <body>
     <h1>Maak de juiste keuze.</h1>
-    
+    <form action="mailto:arthur.vanoudenhove@student.hogent.be?subject=Keuzes" method="post">
+        <label for="serie">Kies je favoriete serie: </label>
+        <select name="series" id="serie">
+            <option value="gameofthrones" selected>Game Of Thrones</option>
+            <option value="peakyblinders">Peaky Blinders</option>
+            <option value="casadepapel">La Casa de Papel</option>
+            <option value="baby">Baby</option>
+            <option value="vikings">Vikings</option>
+            <option value="norsemen">Norsemen</option>
+        </select>
+        <br><br>
+        <label for="lector">Kies je favoriete lector: </label>
+        <input list="lectoren" id="lector" name="lector" />
+        <datalist id="lectoren">
+            <option value="Karine Samyn">
+            <option value="Stefaan Samyn">
+            <option value="Patrick Lauwaerts">
+            <option value="Lotte Vansteenberghe">
+            <option value="Stefaan De Cock">
+        </datalist>
+        <br><br>
+        <input type="submit" value="Maak je keuze">
+    </form>
 </body>
 
 </html>
